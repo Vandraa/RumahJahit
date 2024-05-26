@@ -129,7 +129,7 @@
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_dana_blue.svg/2560px-Logo_dana_blue.svg.png" alt="Dana Logo" class="mr-3 h-[30px] w-[120px] sm:w-[55px] sm:h-[20px]">
                             </div>
                             <div class="w-full text-right">
-                                <h2 class="text-lg sm:text-sm font-semibold">Rp. <span class="font-bold text-sm" id="totalPriceDana">{{ $data->harga }}</span></h2>
+                                <h2 class="text-lg sm:text-sm font-semibold"> <span class="font-bold text-sm" id="totalPriceDana">{{ $data->harga }}</span></h2>
                             </div>
                         </div>
                     </label>
@@ -140,7 +140,7 @@
                             <input type="checkbox" id="indomaret" class="absolute opacity-0 w-0 h-0 focus:ring-0 focus:outline-none">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_Indomaret.png" alt="" class="mr-3 h-[30px] sm:w-[55px] sm:h-[20px]">
                             <div class="w-full text-right">
-                                <h2 class="text-lg sm:text-sm font-semibold">Rp. <span class="font-bold text-sm" id="totalPriceIndomaret">{{ $data->harga }}</span></h2>
+                                <h2 class="text-lg sm:text-sm font-semibold"><span class="font-bold text-sm" id="totalPriceIndomaret">{{ $data->harga }}</span></h2>
                             </div>
                         </div>
                     </label>
@@ -151,7 +151,7 @@
                             <input type="checkbox" id="alfamart" class="absolute opacity-0 w-0 h-0 focus:ring-0 focus:outline-none">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/ALFAMART_LOGO_BARU.png/1200px-ALFAMART_LOGO_BARU.png" alt="" class="mr-3 h-[30px] sm:w-[55px] sm:h-[20px]">
                             <div class="w-full text-right">
-                                <h2 class="text-lg sm:text-sm font-semibold">Rp. <span class="font-bold text-sm" id="totalPriceAlfamart">{{ $data->harga }}</span></h2>
+                                <h2 class="text-lg sm:text-sm font-semibold"> <span class="font-bold text-sm" id="totalPriceAlfamart">{{ $data->harga }}</span></h2>
                             </div>
                         </div>
                     </label>
@@ -162,7 +162,7 @@
                             <input type="checkbox" id="ovo" class=" absolute opacity-0 w-0 h-0 focus:ring-0 focus:outline-none">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Logo_ovo_purple.svg/512px-Logo_ovo_purple.svg.png" alt="" class="mr-3 h-[30px] sm:w-[55px] sm:h-[20px]">
                             <div class="w-full text-right">
-                                <h2 class="text-lg sm:text-sm font-semibold">Rp. <span class="font-bold text-sm" id="totalPriceOvo">{{ $data->harga }}</span></h2>
+                                <h2 class="text-lg sm:text-sm font-semibold"> <span class="font-bold text-sm" id="totalPriceOvo">{{ $data->harga }}</span></h2>
                             </div>
                         </div>
                     </label>
