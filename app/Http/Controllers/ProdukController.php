@@ -16,10 +16,11 @@ use Nette\Schema\Helpers;
 
 class ProdukController extends Controller
 {
+    //Fungsi dashboard menampilkan view dashboard
     public function dashboard(){
         return view('dashboard');
     }
-
+    
     public function index(Request $request){
         // Ambil semua data produk
         $data = Produk::all();
@@ -38,10 +39,12 @@ class ProdukController extends Controller
         return view('produk.index', compact('data', 'request'));
     }
     
+    //Fungsi create menampilkan form untuk membuat produk baru.
     public function create(){
         return view('produk.create');
     }
 
+    //Fungsi store menyimpan data produk baru yang divalidasi.
     public function store(Request $request) {
         $validatedData = $request->validate([
             'nama_produk' => 'required|string',

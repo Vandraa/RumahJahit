@@ -224,8 +224,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const totalPriceElements = {
         Dana: document.getElementById('totalPriceDana'),
-        Indomaret: document.getElementById('totalPriceIndomaret'),
-        Alfamart: document.getElementById('totalPriceAlfamart'),
+        Spay: document.getElementById('totalPriceSpay'),
+        Gopay: document.getElementById('totalPriceGopay'),
         Ovo: document.getElementById('totalPriceOvo')
     };
 
