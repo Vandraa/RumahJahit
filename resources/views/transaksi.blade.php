@@ -20,7 +20,7 @@
         <!-- Produk Start -->
         <div class="bg-white w-full p-5 sm:w-[550px] sm:mx-auto sm:mt-5 sm:rounded-md sm:shadow-lg">
             <div class="mb-5 -mt-3 grid grid-cols-4">
-                <span class="text-sm font-medium justify-end col-start-4"><a href="{{ route('dashboard') }}">home</a> / <a href="{{ route('kemeja') }}">back</a></span>
+                <span class="text-sm font-medium justify-end col-start-4"><a href="{{ route('landing') }}">home</a> / <a href="{{ route('kemeja') }}">back</a></span>
             </div>
             <div class="flex">
                 <img src="{{ Storage::url($data->image) }}" alt="" class="rounded-lg shadow-lg max-h-[80px]">
