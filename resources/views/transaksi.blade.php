@@ -134,24 +134,24 @@
                         </div>
                     </label>
                     
-                    <input type="radio" class="peer hidden" name="metode" value="Indomaret" id="indomaret">
-                    <label for="indomaret" class="group">
+                    <input type="radio" class="peer hidden" name="metode" value="Spay" id="spay">
+                    <label for="spay" class="group">
                         <div class="flex w-full rounded-md shadow-md hover:bg-gray-700 overflow-hidden mb-4 p-5 border-2 border-transparent group-focus-within:border-sky-500 group-active:border-sky-500">
-                            <input type="checkbox" id="indomaret" class="absolute opacity-0 w-0 h-0 focus:ring-0 focus:outline-none">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_Indomaret.png" alt="" class="mr-3 h-[30px] sm:w-[55px] sm:h-[20px]">
+                            <input type="checkbox" id="spay" class="absolute opacity-0 w-0 h-0 focus:ring-0 focus:outline-none">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.QQEJiDjvNx_XwXUUdRmmKwHaD3&pid=Api&P=0&h=220" alt="" class="mr-3 h-[30px] sm:w-[55px] sm:h-[20px]">
                             <div class="w-full text-right">
-                                <h2 class="text-lg sm:text-sm font-semibold"><span class="font-bold text-sm" id="totalPriceIndomaret">{{ $data->harga }}</span></h2>
+                                <h2 class="text-lg sm:text-sm font-semibold"><span class="font-bold text-sm" id="totalPriceSpay">{{ $data->harga }}</span></h2>
                             </div>
                         </div>
                     </label>
                     
-                    <input type="radio" class="peer hidden" name="metode" value="Alfamart" id="alfamart">
-                    <label for="alfamart" class="group">
+                    <input type="radio" class="peer hidden" name="metode" value="Gopay" id="gopay">
+                    <label for="gopay" class="group">
                         <div class="flex w-full rounded-md shadow-md hover:bg-gray-700 overflow-hidden mb-4 p-5 border-2 border-transparent group-focus-within:border-sky-500 group-active:border-sky-500">
-                            <input type="checkbox" id="alfamart" class="absolute opacity-0 w-0 h-0 focus:ring-0 focus:outline-none">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/ALFAMART_LOGO_BARU.png/1200px-ALFAMART_LOGO_BARU.png" alt="" class="mr-3 h-[30px] sm:w-[55px] sm:h-[20px]">
+                            <input type="checkbox" id="gopay" class="absolute opacity-0 w-0 h-0 focus:ring-0 focus:outline-none">
+                            <img src="https://cdn.5minvideo.id/images/kumpulan-gambar-logo-gopay/gopay-logo-vector.png" alt="" class="mr-3 h-[30px] sm:w-[55px] sm:h-[20px]">
                             <div class="w-full text-right">
-                                <h2 class="text-lg sm:text-sm font-semibold"> <span class="font-bold text-sm" id="totalPriceAlfamart">{{ $data->harga }}</span></h2>
+                                <h2 class="text-lg sm:text-sm font-semibold"> <span class="font-bold text-sm" id="totalPriceGopay">{{ $data->harga }}</span></h2>
                             </div>
                         </div>
                     </label>
