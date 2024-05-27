@@ -69,8 +69,7 @@
                         <img src="{{  Storage::url($produk->image) }}" alt="" class="max-w-[150px] h-[150px] md:w-[200px] md:shadow-md md:h-[200px] rounded-lg md:max-w-[300px] md:mb-2 lg:w-[300px] lg:h-[300px] object-cover">
                         <h1 class="font-bold text-lg font-sans truncate md:text-2xl md:mb-3 uppercase">{{$produk->nama_produk}}</h1>
                         <div class="flex md:mb-5">
-                            <p class="font-semibold md:text-lg w-7 md:w-10 lg:w-36">⭐ 5.0 <span class="hidden lg:inline lg:text-xs">(1.5k Riviews)</span></p>
-                            <h2 class="ml-4 self-center font-semibold md:text-xl ">Rp. {{ $produk->harga}}</h2>
+                            <h2 class=" self-center font-semibold md:text-xl ">Rp. {{ $produk->harga}}</h2>
                         </div>
                         <div class="flex justify-center sm:justify-normal">
                             <a href="{{route('transaksi',['id' => $produk->id])}}" class="bg-black px-3 py-1 rounded-lg ml-3 text-sm sm:w-28 sm:h-10 sm:rounded-full sm:px-6 sm:py-[10px] lg:w-32 hover:bg-gray-700"><span class="font-bold text-white  hover:bg-gray-700 lg:ml-2">Checkout</span></a>
