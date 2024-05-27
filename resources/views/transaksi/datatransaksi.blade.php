@@ -58,9 +58,6 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="d-flex justify-content-end mx-3">
-                          {{ $data->links() }}
-                        </div>
                     </div>
                 </div>
             </div>

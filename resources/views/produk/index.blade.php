@@ -43,7 +43,7 @@
                     
                     <!-- /.card-header -->
                     <div class="card-body table-responsive p-0">
-                    <table class="table table-hover text-nowrap">
+                    <table class="table table-hover">
                         <thead>
                         <tr>
                             <th>Id Produk</th>
@@ -62,8 +62,8 @@
                                 <td>{{ $d->detail}}</td>
                                 <td>{{ $d->harga}}</td>
                             <td>
-                                <a href="{{ route('produk.edit', ['id' => $d->id]) }}" class="btn btn-primary">Edit</a>
-                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-hapus{{ $d->id }}">Hapus</button>
+                                <a href="{{ route('produk.edit', ['id' => $d->id]) }}" class="btn btn-primary col mb-2">Edit</a>
+                                <button type="button" class="btn btn-danger col" data-toggle="modal" data-target="#modal-hapus{{ $d->id }}">Hapus</button>
                             </td>
                         </tr>
                         <div class="modal fade" id="modal-hapus{{ $d->id }}">

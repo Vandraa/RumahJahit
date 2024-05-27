@@ -137,7 +137,7 @@ class ProdukController extends Controller
 
     public function datatransaksi(){
 
-        $data = transaction::paginate(5);
+        $data = transaction::get();
     
         return view('transaksi.datatransaksi', compact('data'));
     }
