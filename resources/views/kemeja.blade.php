@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Produk</title>
-
-    {{-- TailwindCSS --}}
+    <title>ALFARUK</title>
+    <link rel="shortcut icon" href="assets/logo.jpg" type="image/x-icon">
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="{{ asset('LTE/dist/icon/css/all.min.css')}}">
-
     <style>
+        
+        .swiper-container {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .swiper-slide {
+            position: relative;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%; /* Adjusted from 45% to 50% */
+            left: 50%; 
+            transform: translate(-50%, -50%);
+            color: white; 
+            font-size: 25px; 
+            text-align: center;
+            background: #1b1c2188;
+            padding: 10px;
+            z-index: 1;
+        }
+
         footer {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             padding-top: 20px;
@@ -27,7 +51,6 @@
         }
     </style>
 </head>
-
 <body class="bg-gray-800">
     <nav class="bg-gray-800">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -38,8 +61,8 @@
                     </div>
                     <div class="hidden sm:ml-6 sm:block">
                         <div class="flex space-x-4">
-                            <a href="{{ route('landing') }}" class="text-gray-300 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-                            <a href="#pesan" id="pesan" class="text-white  bg-gray-900 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Pesan</a>
+                            <a href="{{ route('landing') }}" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+                            <a href="#pesan"  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Pesan</a>
                             <a href="{{ route('contact') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
                         </div>
                     </div>
@@ -57,6 +80,30 @@
         </div>
     </nav>
 
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide touch-action: pan-y;">
+                <img src="{{ asset('images/slide1.jpg') }}" class="w-full" alt="Slide 1" style="touch-action: pan-y;">
+                <div class="text-overlay">Dapatkan pakaian yang pas, nyaman, dan sesuai dengan kebutuhan Anda. Kami mengutamakan kualitas, keahlian, dan perhatian terhadap detail dalam setiap jahitan.</div>
+            </div>
+            <div class="swiper-slide touch-action: pan-y;">
+                <img src="{{ asset('images/slide2.jpg') }}" class="w-full" alt="Slide 2" style="touch-action: pan-y;">
+                <div class="text-overlay"> Percayakan pada kami untuk mendapatkan pakaian yang sesuai dengan gaya Anda dan buatlah penampilan yang memukau. Dapatkan hasil jahitan yang presisi dan memukau dengan menggunakan layanan kami!</div>
+            </div>
+            <div class="swiper-slide touch-action: pan-y;">
+                <img src="{{ asset('images/slide3.jpg') }}" class="w-full" alt="Slide 3" style="touch-action: pan-y;">
+                <div class="text-overlay">Menemukan gaya Anda dengan kenyamanan yang luar biasa. Kami siap membantu Anda mengekspresikan diri dengan pilihan busana yang tepat, sesuai dengan keinginan dan gaya Anda.
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>  
     <main class="flex justify-center items-end mt-16 mb-16">
         <div id="produk" class="container w-full -my-7 md:-my-14">
             <div class="px-4 py-4 bg-white rounded-t-lg relative">
